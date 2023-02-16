@@ -14,6 +14,7 @@ const productModal = {
   template: '#userProductModal',
   mounted() {
     console.log(this.$refs);
+    console.log(this.$refs.modal);
     // this.modal = new bootstrap.Modal(this.$refs.modal);
     // this.modal.show();
   },
