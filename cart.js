@@ -147,6 +147,7 @@ Vue.createApp({
       let loader = this.$loading.show();
       if (this.cart.carts.length < 1) {
         alert('您的購物車尚未有商品，無法進行結帳!!');
+        loader.hide();
       } else {
         axios
           .post(`${apiUrl}/v2/api/${apiPath}/order`, { data: order })
